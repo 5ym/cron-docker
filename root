@@ -1,0 +1,3 @@
+MAILTO=info@daco.dev
+00 10 * * 3 docker exec -w /var/lib/nginx/html/m $(docker ps -f name=web --quiet) node cu.js
+00 10 * * 3 docker exec -w /var/lib/nginx/html/r $(docker ps -f name=web --quiet) node cu.js
